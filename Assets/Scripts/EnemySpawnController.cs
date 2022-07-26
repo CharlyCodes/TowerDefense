@@ -1,7 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 using Random = UnityEngine.Random;
+
 
 public class EnemySpawnController : MonoBehaviour
 {
@@ -13,6 +15,7 @@ public class EnemySpawnController : MonoBehaviour
     [SerializeField] private float _minSpawnDelay = 1;
     [SerializeField] private float _maxSpawnDelay = 3;
     [SerializeField] private float _timeBetweenWaves = 5;
+    [SerializeField] private UnityEvent OnWavesEnded;
     private int _waveNumber;
 
     private void Start() {
@@ -32,6 +35,8 @@ public class EnemySpawnController : MonoBehaviour
             //yield return new WaitForSeconds(5);
             _waveNumber++;
         }
+        //Winner
+    OnWavesEnded?.Invoke();
     }
 
     IEnumerator SpawnEnemies (int enemyAmount, GameObject enemyPrefab){

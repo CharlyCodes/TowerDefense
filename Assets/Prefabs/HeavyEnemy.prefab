@@ -10,11 +10,11 @@ GameObject:
   m_Component:
   - component: {fileID: 8767088423300305221}
   - component: {fileID: 8767088423300305220}
+  - component: {fileID: 8767088423300305219}
   - component: {fileID: 8767088423300305223}
   - component: {fileID: 8767088423300305222}
   - component: {fileID: 8767088423300305217}
   - component: {fileID: 8767088423300305216}
-  - component: {fileID: 8767088423300305219}
   - component: {fileID: 398615464985744515}
   - component: {fileID: 5569702355325228006}
   m_Layer: 0
@@ -54,6 +54,22 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0, y: 0.5, z: 0}
+--- !u!54 &8767088423300305219
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8767088423300305218}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!114 &8767088423300305223
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -131,22 +147,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!54 &8767088423300305219
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8767088423300305218}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &398615464985744515
 MonoBehaviour:
   m_ObjectHideFlags: 0
